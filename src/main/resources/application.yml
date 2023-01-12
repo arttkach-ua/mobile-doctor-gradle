@@ -1,0 +1,13 @@
+spring:
+  main:
+    allow-circular-references: true
+  jpa:
+    #database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.PostgreSQL81Dialect
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/MobileDoctor
+    driverClassName: org.postgresql.Driver
